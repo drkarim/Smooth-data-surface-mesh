@@ -4,6 +4,8 @@ This program smooths the point data scalars based on the maximum distance betwee
 
 Note that this maximum distance ``hard-coded`` is used to calculate the weight or influence of each point. The weight is based on the proportion of the distance between points.  
 
+This distance can be obtained by computing the diagonal of the bounding box using the Euclidean distance between 3D points. The bounding box can be obtained by loading the mesh in Paraview. 
+
 It is strongly recommended that this distance value is adapted for each mesh. 
 
 ## Usage 
