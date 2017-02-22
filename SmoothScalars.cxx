@@ -76,6 +76,13 @@
 #include <vtkTriangleFilter.h>
 #include <vtkDoubleArray.h>
 #include <vtkPolyDataWriter.h>
+
+
+/*
+* Please change this distance to suit your application 
+* You can obtain this from the bounding box of your mesh when it is loaded on Paraview
+* Calculate the diagonal of the bounding box using the Euclidean distance between 3D points 
+*/
 #define MAXDIST 100.0
 
 int main( int argc, char * argv[] )
