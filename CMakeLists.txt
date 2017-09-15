@@ -10,5 +10,6 @@ add_executable(smoothscalars SmoothScalars.cxx)
  
 if(VTK_LIBRARIES)
   target_link_libraries(smoothscalars ${VTK_LIBRARIES})
+  INSTALL(TARGETS smoothscalars DESTINATION /usr/local/lib/rk_kcl_tools)
   
 endif()
